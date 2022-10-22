@@ -1,0 +1,5 @@
+Terms and Conditions
+Please carefully read the disclaimer before using any of this data. Your use of this data constitutes your acceptance of the terms and conditions set forth below. If you do not agree to those terms and conditions, please click on the I Disagree link.
+
+Disclaimer:
+This information has been provided to your free of charge for your use but remains the sole property of TE Connectivity Corporation (''TE'') or SnapEDA,  Inc. or Ultra Librarian/EMA Design Automation, Inc. (collectively, "Company"). While Company has used reasonable efforts to ensure its accuracy, Company does not guarantee that it is error-free, not makes any other representation, warranty, or guarantee that the information is completely accurate or up-to-date. In many cases, the CAD data has been simplified to remove proprietary detail while maintaining critical interface geometric detail for use by customers. Company expressly disclaims all implied warranties regarding this information, including but not limited to any implied warranties or merchantability or fitness for a particular purpose.
