@@ -59,6 +59,7 @@ and cost of additional parts that need to be ordered and assembled.
       - This has not yet been tested for fit in the keyboard.
 - USB connector with locking tab
    - Part number: `LUSBA11100` (AMPHENOL COMMUNICATIONS SOLUTIONS)
+   - [Digikey](https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/LUSBA11100/1956311?s=N4IgTCBcDaIDIFUDKAhAggRiwBmyAugL5A)
    - [Farnell](https://ro.farnell.com/amphenol-icc-commercial-products/lusba11100/usb-conn-2-0-type-a-receptacle/dp/2708971?CMP=e-email-sys-orderack-GLB)
 - Optional 90 degree headers for solenoid support. You can use one of two options:
    - An 1x4 90-degree header: (recommended)
