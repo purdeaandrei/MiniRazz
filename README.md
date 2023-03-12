@@ -69,8 +69,12 @@ and cost of additional parts that need to be ordered and assembled.
 
 ## Firmware
 
-At the time of writing only ZMK firmware is available, but QMK and VIAL-QMK firmwares are also planned.
+ZMK firmware, and VIAL-QMK are available, (plain QMK upstreaming will also be attempted).
 
+### ZMK Firmware
 The ZMK firmware can be downloaded by clicking Releases here: https://github.com/purdeaandrei/minirazz-zmk-config
 The keymap can be customized by forking this repository, and editing the keymap. The firmware will be automatically rebuilt by github, and will be available on the "Actions" tab.
 If you want to keep your keymap secret, you can copy the content of this repository into a private github repository.
+
+### VIAL Firmware
+https://github.com/purdeaandrei/vial-qmk-minirazz/releases
