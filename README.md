@@ -42,12 +42,12 @@ Licensed under CERN-OHL-P v2 or later
 
 Cost analysis at the time of writing (2024 Aug 11):
 
-| Qty | JLCPCB (USD) | JLC shipping est. (USD) | Digikey Triomates (USD) | Digikey shipping est. (USD) | VAT (19%) USD | Total USD | Coast per Board |
-|-----|--------------|-------------------------|-------------------------|-----------------------------|---------------|-----------|-----------------|
-| 5   |   84.34      | 23.80                   | 14.66                   | 30                          | 29.032        | 181.832   | 36.3664         |
-| 10  |  106.13      | 29.80                   | 29.32                   | 30                          | 37.0975       | 232.3475  | 23.23475        |
-| 15  |  130.10      | 55.54                   | 43.764                  | 30                          | 49.28676      | 308.69076 | 20.579384       |
-| 20  |  154.18      | 57.74                   | 58.352                  | 30                          | 57.05168      | 357.32368 | 17.866184       |
+| Qty | JLCPCB (USD) | JLC shipping est. (USD) | Digikey Triomates (USD) | Digikey shipping est. (USD) | VAT (19%) USD | Total (USD) | Coast per Board (USD) |
+|-----|--------------|-------------------------|-------------------------|-----------------------------|---------------|-------------|-----------------------|
+| 5   |   84.34      | 23.80                   | 14.66                   | 30                          | 29.03         | 181.83      | 36.37                 |
+| 10  |  106.13      | 29.80                   | 29.32                   | 30                          | 37.10         | 232.35      | 23.24                 |
+| 15  |  130.10      | 55.54                   | 43.76                   | 30                          | 49.29         | 308.69      | 20.58                 |
+| 20  |  154.18      | 57.74                   | 58.35                   | 30                          | 57.05         | 357.32      | 17.87                 |
 
 ## Components of this design that may have to be ordered separately:
 - 2 pcs of 16-pin 90-degree triomate connectors / board:
