@@ -59,7 +59,7 @@ Cost analysis at the time of writing (2024 Aug 11):
      - You can pre-order it, and then have them assemble it, however it may not make financial sense (current costs are higher than from digikey, and you have to order 5 pcs extra for attrition.)
        - If you decide to have JLCPCB assemble this component, it is present in the bom/cpl files, but make sure the connector position/rotations are connect. I could not verify because they weren't in stock at the time I last checked.
 
-# Other through hole components that may make sense to buy separately and to solder yourself:
+## Other through hole components that may make sense to buy separately and to solder yourself:
 - USB connector with locking tab
    - Part number: `LUSBA11100` (AMPHENOL COMMUNICATIONS SOLUTIONS)
    - [Digikey](https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/LUSBA11100/1956311?s=N4IgTCBcDaIDIFUDKAhAggRiwBmyAugL5A)
