@@ -26,37 +26,40 @@ Licensed under CERN-OHL-P v2 or later
 12. Select "Tooling holes" = "Added by Customer"
 13. Click "I agree to the Terms and Conditions..."
 14. Click "Next" on the right side
-15. Click "Add BOM File", upload the "*_bom_jlc.csv" file from the "order" subfolder.
-16. Click "Add CPL File", upload the "*_cpl_jlc.csv" file from the "order" subfolder.
-17. Click "Process BPM & CPL"
-18. Make sure that all parts say "Confirmed" with a little check box in the final column. If it shows a greyed out "confirm", or a yellow "Inventory shortage", or there is a red "No parts selected" in the Matched Part Detail column, then some parts may be out of stock. (If parts are out of stock then your options are Wait until it's back in stock / Find equivalent replacement with correct footprint, if it is in the JLCPCB parts library / Redesign the board with a different component / Order the missing part from another supplier and solder it yourself )
-19. Click "Next"
-20. Check the rotation of components. At the time of writing they were all correct, but JLCPCB may change their component libraries, so this may change in the future.
-21. Click "Next"
-22. Select Product Description: Office Appliance.../Keyboard...
+15. Click "Next" on the right side
+16. Click "Add BOM File", upload the "*_bom_jlc.csv" file from the "order" subfolder.
+17. Click "Add CPL File", upload the "*_cpl_jlc.csv" file from the "order" subfolder.
+18. Click "Process BPM & CPL"
+19. Take a look at what parts are available. At the time of writing J2/J3 triomate connectors were only available if pre-ordered (at a higher cost than ordering from DigiKey).
+    You may be able to optimize cost by choosing to solder certain parts yourself, through-hole parts being the most likely candidate. (Please see the following section)
+20. Click "Next", you will also have to click "Do Not Place" if some components are missing.
+21. Check the rotation of components. JLCPCB may change default rotation in their component libraries at any time, and also position and rotation of the triomates has not been verified.
+    - Check that component pins line up correctly with pads
+    - Check that components which have polarity (usually marked with a dot) are oriented towards an assimetric marking on the silkscreen (for example for the memory and the io expander there's an extra line, while for the RP2040 there's a missing corner line to mark pin 1)
+22. Click "Next"
+23. Select Product Description: Office Appliance.../Keyboard...
 24. Save to Cart, Check Out.
 
-Cost analysis at the time of writing (2023 Feb 12):
+Cost analysis at the time of writing (2024 Aug 11):
 
-| Qty | Cost (USD) | Cost/Board (USD) |
-|-----|------------|------------------|
-| 5   |  80.10     | 16.02            |
-| 10  |  92.27     | 9.227            |
-| 15  | 106.03     | 6.069            |
-| 20  | 119.50     | 5.975            |
-| 25  | 133.05     | 5.322            |
-| 30  | 141.94     | 4.731            |
-| 50  | 190.91     | 3.818            |
+| Qty | JLCPCB (USD) | JLC shipping est. (USD) | Digikey Triomates (USD) | Digikey shipping est. (USD) | VAT (19%) USD | Total USD | Coast per Board |
+|-----|--------------|-------------------------|-------------------------|-----------------------------|---------------|-----------|-----------------|
+| 5   |   84.34      | 23.80                   | 14.66                   | 30                          | 29.032        | 181.832   | 36.3664         |
+| 10  |  106.13      | 29.80                   | 29.32                   | 30                          | 37.0975       | 232.3475  | 23.23475        |
+| 15  |  130.10      | 55.54                   | 43.764                  | 30                          | 49.28676      | 308.69076 | 20.579384       |
+| 20  |  154.18      | 57.74                   | 58.352                  | 30                          | 57.05168      | 357.32368 | 17.866184       |
 
-Note that the above table does NOT include other costs such as shipping,
-and cost of additional parts that need to be ordered and assembled.
-
-## Components of this design that have to be ordered separately:
+## Components of this design that may have to be ordered separately:
 - 2 pcs of 16-pin 90-degree triomate connectors / board:
    - Part number: `6-520314-6` (TE Connectivity AMP Connectors)
    - [Digikey](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/6-520314-6/1153749)
    - If the 90-degree connectors are not in stock, then you may also be able to get away with vertical ones (part number `6-520315-6`)
       - This has not yet been tested for fit in the keyboard.
+   - JLCPCB now has it in its library, however it's not in stock.
+     - You can pre-order it, and then have them assemble it, however it may not make financial sense (current costs are higher than from digikey, and you have to order 5 pcs extra for attrition.)
+       - If you decide to have JLCPCB assemble this component, it is present in the bom/cpl files, but make sure the connector position/rotations are connect. I could not verify because they weren't in stock at the time I last checked.
+
+# Other through hole components that may make sense to buy separately and to solder yourself:
 - USB connector with locking tab
    - Part number: `LUSBA11100` (AMPHENOL COMMUNICATIONS SOLUTIONS)
    - [Digikey](https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/LUSBA11100/1956311?s=N4IgTCBcDaIDIFUDKAhAggRiwBmyAugL5A)
